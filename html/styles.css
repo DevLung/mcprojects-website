@@ -124,8 +124,11 @@ a:active {
     box-sizing: border-box;
     text-align: center;
     font-size: 16px;
-    color: #ced4da;
     transition: all 0.3s;
+}
+
+.main_url:any-link {
+    color: #ced4da;
 }
 
 .main_url:hover {
@@ -137,13 +140,40 @@ a:active {
 }
 
 .main_url:active {
-    color: #ced4da;
     transform: scale(0.9);
 }
 
-.main_url:link,
-.main_url:visited {
-    color: #ced4da;
+.popup {
+    display: none;
+    position: fixed;
+    top: 10%;
+    z-index: 20;
+    height: 70%;
+    width: 70%;
+    box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.75);
+}
+
+.popup_close_button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px 25px;
+    font-size: 50px;
+}
+
+.popup_close_button:any-link {
+    color: #6c757d;
+}
+
+.popup_close_button:hover {
+    color: #e63946;
+}
+
+.scrollable_popup_element {
+    overflow-y: auto;
+    height: 90%;
+    margin-left: 2em;
+    text-align: left;
 }
 
 .auto-top-y {

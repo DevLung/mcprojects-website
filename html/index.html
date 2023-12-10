@@ -4,6 +4,7 @@
    <meta charset="utf-8">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:b">
    <link rel="stylesheet" href="./styles.css">
+   <script src="./script.js"></script>
    <link rel="icon" href="./media/favicon.png">
    <title>DerLung's Minecraft-Projekte</title>
 </head>
@@ -28,8 +29,18 @@
             Das Projekt wird starten, sobald die 1.21, die entsprechende Fabric- und Lithium Version verfügbar sind.
          </p>
          <section class="main_url_section">
+            <a class="main_url" href="#" onclick="show('1-21-smp_rules_popup')">Regeln</a>
+            <div class="popup" id="1-21-smp_rules_popup">
+               <h2>Regeln</h2>
+               <a class="popup_close_button" href="" onclick="hide('1-21-smp_rules_popup')">&times;</a>
+               <section class="scrollable_popup_element">
+                  <p>
+                     - under construction -
+                  </p>
+               </section>
+            </div>
             <a class="main_url" href="./projects/1-21-smp-modlist">Modliste</a>
-            <section>
+         </section>
       </div>
 
       <div class="ended" id="1-20-smp">
@@ -70,6 +81,16 @@
             INFO
          </p>
          <section class="main_url_section">
+            <a class="main_url" href="#" onclick="show('PROJECT_RULES_POPUP_ID')">Regeln</a>
+            <div class="popup" id="PROJECT_RULES_POPUP_ID">
+               <h2>Regeln</h2>
+               <a class="popup_close_button" href="" onclick="hide('PROJECT_RULES_POPUP_ID')">&times;</a>
+               <section class="scrollable_popup_element">
+                  <p>
+                     RULES
+                  </p>
+               </section>
+            </div>
             <a class="main_url" href="./projects/PROJECT-MODLIST">Modliste</a>
          </section>
       </div>
