@@ -106,6 +106,14 @@ a:active {
     color: #caf0f8;
 }
 
+.players {
+    padding: 0.5em;
+}
+
+.player_head {
+    padding: 0 0.75em 1.5em;
+}
+
 .main_url_section {
     display: flex;
     flex-wrap: wrap;
