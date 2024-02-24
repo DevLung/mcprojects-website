@@ -108,6 +108,7 @@ a:active {
 
 .main_url_section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
