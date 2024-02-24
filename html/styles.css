@@ -54,6 +54,7 @@ thead {
 th,
 td {
     padding-inline: 1em;
+    text-align: left;
 }
 
 .left-header,
