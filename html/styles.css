@@ -107,11 +107,11 @@ a:active {
 }
 
 .players {
-    padding: 0.5em;
+    margin: 2em;
 }
 
 .player_head {
-    padding: 0 0.75em 1.5em;
+    margin-inline: 0.75em;
 }
 
 .main_url_section {
