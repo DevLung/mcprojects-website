@@ -5,7 +5,6 @@
    <meta charset="utf-8">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:b">
    <link rel="stylesheet" href="./styles.css?v=3.1.1">
-   <script src="./script.js"></script>
    <link rel="icon" href="./media/favicon.png?v=2.0.0">
    <title>DerLung's Minecraft-Projekte</title>
 </head>
@@ -17,8 +16,10 @@
          <h1>Minecraft-Projekte von DerLung</h1>
       </header>
 
+      <input type="text" oninput="search(this)">
+
       <!-- insert new project here -->
-      <div class="scheduled" id="1-21-smp">
+      <div class="project scheduled" id="1-21-smp">
          <h2>1.21-SMP</h2>
          <p>
             Ein (hauptsächlich) Vanilla SMP, das dazu da ist, die Version 1.21 zu erkunden und erleben<br>
@@ -50,7 +51,7 @@
          </section>
       </div>
 
-      <div class="ended" id="1-20-smp">
+      <div class="project ended" id="1-20-smp">
          <h2>1.20-SMP</h2>
          <p>
             Ein Vanilla SMP, das dazu da ist, die Version 1.20 zu erkunden und erleben<br>
@@ -77,14 +78,17 @@
          </section>
       </section>
    </footer>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="./script.js"></script>
 </body>
 
 </html>
 
 
-<!-- project template (update class to show status of project (scheduled/running/ended))
+<!-- project template (update second class to show status of project (scheduled/running/ended))
 
-      <div class="scheduled" id="PROJECT-ID">
+      <div class="project scheduled" id="PROJECT-ID">
          <h2>PROJECT-NAME</h2>
          <p>
             DESCRIPTION

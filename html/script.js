@@ -1,3 +1,6 @@
+// import "jquery"; // uncomment while developing for intellisense
+
+
 $ = function (id) {
     return document.getElementById(id);
 }
@@ -13,4 +16,15 @@ var show = function (id) {
 var hide = function (id) {
     $(id).style.display = 'none';
     openedOverlay = null;
+}
+
+
+function search(input) {
+    var text = jQuery(input).val().toLowerCase();
+    jQuery(".project").show();
+    jQuery(".project").each(function () {
+        if (jQuery(this).text().toLowerCase().indexOf(text) == -1) {
+            jQuery(this).hide();
+        }
+    });
 }
