@@ -33,8 +33,7 @@ input {
     font-size: medium;
     border: 2px solid #212529;
     border-radius: 5px;
-    margin-block: 1em 0;
-    /* TODO: make left-bound, add search logo */
+    margin: 0 auto 0 calc(100% - 20em);
 }
 
 .scheduled {
