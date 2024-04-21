@@ -35,12 +35,20 @@ input {
     border-radius: 5px;
 }
 
-.search {
-    margin: 0 auto 0 calc(100% - 20.25em);
-    background-image: url(./media/search.png);
+input[type="search"] {
+    margin: 0 auto 0 calc(100% - 21.5em);
+    background-image: url(./media/search/search.png);
     background-size: contain;
     background-repeat: no-repeat;
-    text-indent: 24px;
+    padding-left: 24px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 1em;
+    width: 1em;
+    background: url(./media/search/clear.png) no-repeat;
+    background-size: contain;
 }
 
 .scheduled {
