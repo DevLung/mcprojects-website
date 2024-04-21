@@ -19,10 +19,10 @@ var hide = function (id) {
 }
 
 
-function search(input) {
-    var text = jQuery(input).val().toLowerCase();
-    jQuery(".project").show();
-    jQuery(".project").each(function () {
+function search(inputElement, searchClass) {
+    var text = jQuery(inputElement).val().toLowerCase();
+    jQuery(searchClass).show();
+    jQuery(searchClass).each(function () {
         if (jQuery(this).text().toLowerCase().indexOf(text) == -1) {
             jQuery(this).hide();
         }
