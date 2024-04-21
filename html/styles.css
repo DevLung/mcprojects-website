@@ -26,6 +26,17 @@ div {
     background-color: #212529;
 }
 
+input {
+    background-color: #212529;
+    color: inherit;
+    font-family: inherit;
+    font-size: medium;
+    border: 2px solid #212529;
+    border-radius: 5px;
+    margin-block: 1em 0;
+    /* TODO: make left-bound, add search logo */
+}
+
 .scheduled {
     border-left: 6px solid #ced4da;
 }
