@@ -218,6 +218,10 @@ a:active {
     text-align: left;
 }
 
+.scrollable_popup_element li {
+    padding-block: 5px;
+}
+
 .auto-top-y {
     height: 1em;
     --image_scale: 2.5;
