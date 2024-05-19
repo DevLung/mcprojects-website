@@ -26,6 +26,18 @@ div {
     background-color: #212529;
 }
 
+div.scheduled {
+    border-left: 6px solid #ced4da;
+}
+
+div.running {
+    border-left: 6px solid #52b788;
+}
+
+div.ended {
+    border-left: 6px solid #e63946;
+}
+
 input {
     background-color: #212529;
     color: inherit;
@@ -36,11 +48,11 @@ input {
 }
 
 input[type="search"] {
-    margin: 0 auto 0 calc(100% - 21.5em);
     background-image: url(./media/search/search.png);
     background-size: contain;
     background-repeat: no-repeat;
     padding-left: 24px;
+    margin-block: 1em 0;
 }
 
 input[type="search"]::-webkit-search-cancel-button {
@@ -49,24 +61,20 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 1em;
     background: url(./media/search/clear.png) no-repeat;
     background-size: contain;
+    cursor: pointer;
 }
 
-.scheduled {
-    border-left: 6px solid #ced4da;
+input.div_search {
+    width: calc(100% - 8em);
 }
 
-.running {
-    border-left: 6px solid #52b788;
-}
-
-.ended {
-    border-left: 6px solid #e63946;
+input.inner_search {
+    background-color: #343a40;
+    border-color: #343a40;
 }
 
 table {
-    margin-block: 3em;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2em auto 3em;
     border-collapse: collapse;
     text-align: left;
 }
@@ -80,11 +88,8 @@ td {
     padding: 5px 1em;
 }
 
-.left-header,
-.recommendation,
-.handy,
-.optional,
-.implementation {
+th:first-of-type,
+td:first-of-type {
     text-align: right;
     border-right: 2px solid #495057;
 }
@@ -229,25 +234,25 @@ a:active {
     text-align: left;
 }
 
-.auto-top-y {
+img.auto-top-y {
     height: 1em;
     --image_scale: 2.5;
     --shadow_scale: 6px;
 }
 
-.freecam-collision {
+img.freecam-collision {
     height: 1.25em;
     --image_scale: 5;
     --shadow_scale: 3px
 }
 
-.explaination-image {
+img.explaination {
     vertical-align: middle;
     border-radius: 2px;
     transition: transform 0.2s;
 }
 
-.explaination-image:hover {
+img.explaination:hover {
     transform: scale(var(--image_scale));
     box-shadow: 0px 0px var(--shadow_scale) black;
 }
