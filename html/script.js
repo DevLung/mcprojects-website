@@ -16,7 +16,7 @@ function hide(id) {
 
 
 function search(inputElement, selector, parentSelector=null) {
-    var text = jQuery(inputElement).val().toLowerCase();
+    var searchTerm = jQuery(inputElement).val().toLowerCase();
     var selection = jQuery(selector);
     var searchForParent = parentSelector != null;
 
@@ -26,7 +26,7 @@ function search(inputElement, selector, parentSelector=null) {
         selection.show();
     }
     selection.each(function () {
-        if (jQuery(this).text().toLowerCase().indexOf(text) == -1) {
+        if (jQuery(this).text().toLowerCase().indexOf(searchTerm) == -1) {
             if (searchForParent) {
                 jQuery(this).parent(parentSelector).hide();
             } else {
