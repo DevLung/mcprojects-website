@@ -4,7 +4,7 @@
 <head>
    <meta charset="utf-8">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:b">
-   <link rel="stylesheet" href="./styles.css?v=3.2.1">
+   <link rel="stylesheet" href="./styles.css?v=3.2.2">
    <link rel="icon" href="./media/favicon.png?v=2.0.0">
    <title>DerLung's Minecraft-Projekte</title>
 </head>
@@ -19,6 +19,36 @@
       <input type="search" onfocus="this.select()" oninput="search(this, '.project')">
 
       <!-- insert new project here -->
+      <div class="project scheduled" id="create-smp">
+         <h2>Create SMP</h2>
+         <p>
+            Ein SMP basierend auf einem Modpack.<br>
+            Das Pack besteht hauptsächlich aus der Create Mod und vielen Create Addons, sowie einigen andere Mods. (Siehe Modpack-Seite)
+         </p>
+         <p>
+            Das Projekt soll irgendwann nach dem <a href="#1-21-smp">1.21-SMP</a> starten.
+         </p>
+         <section class="players">
+            <h3>Teilnehmer</h3>
+            <a href="https://www.youtube.com/@DerLung" target="_blank" rel="noreferrer noopener" class="player_head"><img src="https://mineskin.eu/avatar/DerLung/32" title="DerLung"></a>
+         </section>
+         <section class="main_url_section">
+            <a class="main_url" href="#" onclick="show('create-smp-rules-popup')">Regeln</a>
+            <div class="popup" id="create-smp-rules-popup">
+               <section class="blocker" onclick="hide(openedOverlay)"></section>
+               <h2>Regeln</h2>
+               <a class="popup_close_button" href="#" onclick="hide('create-smp-rules-popup')">&times;</a>
+               <section class="scrollable_popup_element">
+                  <ul>
+                     <li>under construction...</li>
+                  </ul>
+               </section>
+            </div>
+            <a class="main_url" onclick="alert('Das Modpack wird verfügbar sein, sobald es fertiggestellt ist.\nBitte habe noch etwas Geduld.')" href="">Download Modpack</a>
+            <a class="main_url" href="./projects/create-smp-modpack">Modpack Info</a>
+         </section>
+      </div>
+
       <div class="project scheduled" id="1-21-smp">
          <h2>1.21-SMP</h2>
          <p>
