@@ -125,6 +125,7 @@ li {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:link {
@@ -214,9 +215,6 @@ a:active {
     top: 0;
     margin: 5px 25px;
     font-size: 50px;
-}
-
-.popup_close_button:any-link {
     color: #6c757d;
 }
 
