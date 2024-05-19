@@ -110,6 +110,19 @@ td {
     color: gray;
 }
 
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+li {
+    padding-block: 5px;
+}
+
+.centered_list_container {
+    text-align: center;
+}
+
 a {
     text-decoration: none;
 }
@@ -216,10 +229,6 @@ a:active {
     height: 90%;
     margin-left: 2em;
     text-align: left;
-}
-
-.scrollable_popup_element li {
-    padding-block: 5px;
 }
 
 .auto-top-y {
