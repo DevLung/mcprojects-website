@@ -15,12 +15,23 @@ function hide(id) {
 }
 
 
-function search(inputElement, selector) {
+function search(inputElement, selector, parentSelector=null) {
     var text = jQuery(inputElement).val().toLowerCase();
-    jQuery(selector).show();
-    jQuery(selector).each(function () {
+    var selection = jQuery(selector);
+    var searchForParent = parentSelector != null;
+
+    if (searchForParent) {
+        selection.parent(parentSelector).show();
+    } else {
+        selection.show();
+    }
+    selection.each(function () {
         if (jQuery(this).text().toLowerCase().indexOf(text) == -1) {
-            jQuery(this).hide();
+            if (searchForParent) {
+                jQuery(this).parent(parentSelector).hide();
+            } else {
+                jQuery(this).hide();
+            }
         }
     });
 }
