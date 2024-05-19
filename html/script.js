@@ -15,10 +15,10 @@ function hide(id) {
 }
 
 
-function search(inputElement, searchClass) {
+function search(inputElement, selector) {
     var text = jQuery(inputElement).val().toLowerCase();
-    jQuery(searchClass).show();
-    jQuery(searchClass).each(function () {
+    jQuery(selector).show();
+    jQuery(selector).each(function () {
         if (jQuery(this).text().toLowerCase().indexOf(text) == -1) {
             jQuery(this).hide();
         }
