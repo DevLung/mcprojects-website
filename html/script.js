@@ -1,7 +1,7 @@
 // import "jquery"; // uncomment while developing for intellisense
 
 
-var openedOverlay;
+let openedOverlay;
 
 // open popup and save its ID in openedOverlay
 function show(id) {
@@ -16,9 +16,9 @@ function hide(id) {
 
 
 function search(inputElement, selector, parentSelector=null) {
-    var searchTerm = jQuery(inputElement).val().toLowerCase();
-    var selection = jQuery(selector);
-    var searchForParent = parentSelector != null;
+    let searchTerm = jQuery(inputElement).val().toLowerCase();
+    let selection = jQuery(selector);
+    let searchForParent = parentSelector != null;
 
     if (searchForParent) {
         selection.parent(parentSelector).show();
@@ -37,15 +37,15 @@ function search(inputElement, selector, parentSelector=null) {
 }
 
 
-var copyUriButtonClicked = false;
+let copyUriButtonClicked = false;
 
 function copyUriToClipboard(button, uri) {
     navigator.clipboard.writeText(uri);
 
     if (!copyUriButtonClicked) {
         copyUriButtonClicked = true;
-        var initialText = button.innerHTML;
-        var initialColor = button.style.backgroundColor
+        let initialText = button.innerHTML;
+        let initialColor = button.style.backgroundColor
         button.innerHTML = "Link kopiert!";
         button.style.color = "#52b788"
         setTimeout(function () {
