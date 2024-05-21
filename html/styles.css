@@ -236,27 +236,20 @@ a:active {
     text-align: left;
 }
 
-img.auto-top-y {
-    height: 1em;
-    --image_scale: 2.5;
-    --shadow_scale: 0.4em;
-}
-
-img.freecam-collision {
-    height: 1.25em;
-    --image_scale: 5;
-    --shadow_scale: 0.2em;
-}
-
 img.explaination {
     vertical-align: middle;
     border-radius: 2px;
     transition: transform 0.2s;
+
+    /* override in inline styling if needed */
+    height: 1em;
+    --image_scale: 2.5;
+    --shadow-size: 0.4em;
 }
 
 img.explaination:hover {
     transform: scale(var(--image_scale));
-    box-shadow: 0 0 var(--shadow_scale) black;
+    box-shadow: 0 0 var(--shadow-size) black;
 }
 
 footer {
