@@ -164,8 +164,11 @@ a:active {
     margin: 2em;
 }
 
-.player_head {
-    margin-inline: 0.75em;
+.player_heads {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
 }
 
 .main_url_section {
