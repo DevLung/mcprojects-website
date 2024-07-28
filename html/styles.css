@@ -133,7 +133,8 @@ td:first-of-type {
     color: gray;
 }
 
-ul {
+ul,
+ol {
     display: inline-block;
     text-align: left;
 }

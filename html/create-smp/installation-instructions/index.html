@@ -6,36 +6,27 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:b">
     <link rel="stylesheet" href="../../styles.css?v=3.5.1">
     <link rel="icon" href="../../media/hotlink-ok/favicon.png?v=2.0.0">
-    <title>Infos zum Create-SMP-Modpack</title>
+    <title>Installationsanleitung</title>
 </head>
 
 <body>
     <section class="main_content">
         <header>
             <a class="logo" href="/"><img src="../../media/hotlink-ok/favicon.png?v=2.0.0" alt="Startseite"></a>
-            <h1>Infos zum Modpack des Create-SMP</h1>
+            <h1>Installationsanleitung Create-SMP Modpack</h1>
         </header>
 
-        <div id="modpack">
-            <h2><a onclick="alert('Das Modpack wird verfügbar sein, sobald es fertiggestellt ist.\nBitte habe noch etwas Geduld.')" href="">Download Modpack</a></h2> <!--TODO add  target="_blank" rel="noreferrer noopener"  to a tag after adding actual download link-->
-            <p>
-                <br>
-                Minecraft Version ???<br> <!--TODO add versions-->
-                <a href="https://files.minecraftforge.net/net/minecraftforge/forge/">Forge Mod Loader</a> Version ???
-            </p>
-        </div>
-
-        <div id="contained_mods">
-            <h2>Im Modpack enthaltene Mods</h2>
-            <input type="search" class="inner_search" onfocus="this.select()" oninput="search(this, '.contained_mods > li')">
+        <div>
             <section class="centered_list_container">
-                <ul class="contained_mods">
-                    <li>...werden hier aufgelistet, wenn das Modpack fertiggestellt ist.</li>
-                </ul>
+                <ol>
+                    <li><a href="https://modrinth.com/app" target="_blank" rel="noreferrer noopener">Modrinth App</a> installieren und einrichten</li>
+                    <li><a onclick="alert('Das Modpack wird verfügbar sein, sobald es fertiggestellt ist.\nBitte habe noch etwas Geduld.')" href="">Modpack herunterladen</a></li> <!--TODO add  target="_blank" rel="noreferrer noopener"  to a tag after adding actual download link-->
+                    <li>in der Modrinth App unten links auf das grüne "+" klicken, um eine neue Instanz zu erstellen</li>
+                    <li>"From File" auswählen und dann die zuvor heruntergeladene .mrpack Datei auswählen <img src="./media/import_modpack_from_file.png" alt="auf 'From File' klicken und die Modpack-Datei auswählen" class="explaination" style="height: 1.2em; --image-scale: 8; --shadow-size: 0.15em;"></li>
+                    <li>alle Mods und die richtige Minecraft- und Java-Version werden automatisch installiert</li>
+                    <li>Nach Installationsabschluss kann die Instanz über den grünen Pfeil, der beim hovern über die Instanz erscheint, oder durch Klicken des "Play" Buttons im Menü der Instanz gestartet werden.</li>
+                </ol>
             </section>
-            <p class="footnote">
-                Bei Vorschlägen für weitere Mods bitte an derlung auf Discord schreiben
-            </p>
         </div>
     </section>
 
@@ -49,9 +40,6 @@
             </section>
         </section>
     </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../../script.js?v=2.0.0"></script>
 </body>
 
 </html>
