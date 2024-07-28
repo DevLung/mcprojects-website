@@ -16,7 +16,8 @@
             <h1>Installationsanleitung Create-SMP Modpack</h1>
         </header>
 
-        <div>
+        <div id="installation">
+            <h2>Installation</h2>
             <section class="centered_list_container">
                 <ol>
                     <li><a href="https://modrinth.com/app" target="_blank" rel="noreferrer noopener">Modrinth App</a> installieren und einrichten</li>
@@ -27,6 +28,30 @@
                     <li>(empfohlen) entweder in den globalen Einstellungen oder in denen der Instanz mehr RAM zuweisen (Hälfte des im System verfügbaren RAMs ist in der Regel optimal)</li>
                     <li>Nach Installationsabschluss kann die Instanz über den grünen Pfeil, der beim hovern über die Instanz erscheint, oder durch Klicken des "Play" Buttons im Menü der Instanz gestartet werden.</li>
                 </ol>
+            </section>
+        </div>
+
+        <div id="tips">
+            <h2>Tips und Troubleshooting</h2>
+            <section class="centered_list_container">
+                <ul>
+                    <li>Sollte die Instanz mal crashen, ist das in der Regel nicht schlimm. Einfach nochmal starten, dann geht es in der Regel wieder...</li>
+                    <li>
+                        Wenn die Instanz zu oft crashed, kann es passieren, dass die Einstellungen teilweise resetted werden. In diesem Fall:<br>
+                        <ol>
+                            <li>die Instanz stoppen</li>
+                            <li>über den Button neben dem "Play" Button im Menü der Instanz die Dateien öffnen</li>
+                            <li>eine Kopie der Datei <code>options.txt.bak</code> machen</li>
+                            <li>die Datei <code>options.txt</code> löschen</li>
+                            <li>die neu angelegte Kopie in <code>options.txt</code> umbenennen</li>
+                            <li>die Instanz wieder starten</li>
+                        </ol><br>
+                        jetzt sollten die Einstellungen wieder so sein, wie als das Modpack frisch installiert war
+                    </li>
+                    <li>Wenn du etwas an den Einstellungen geändert hast, solltest du selbst ein Backup der <code>options.txt</code> Datei machen,
+                        um dieses statt der originalen <code>options.txt.bak</code> zur Wiederherstellung zu verwenden</li>
+                    <li>sollte die Instanz gar nicht mehr funktionieren o.ä., einfach das Modpack aus der Modpack-Datei <a href="./#installation">neu installieren</a></li>
+                </ul>
             </section>
         </div>
     </section>
