@@ -55,3 +55,24 @@ function copyUriToClipboard(button, uri) {
         }.bind(button), 1500);
     }
 }
+
+
+// sets the onclick attribute of elements with id=anchorId to the text at UrlJsonKey in the response of endpoint
+function setDownloadUrl(endpoint, UrlJsonKey, anchorId) {
+    jQuery.ajax({
+        url: endpoint,
+        method: "GET",
+        dataType: "json",
+        cache: false,
+        error: (err) => {
+            console.error(err.statusText);
+            alert(`Downloadlink konnte nicht abgefragt werden.\n(${err.statusText})`);
+        },
+        success: (success) => {
+            document.getElementById(anchorId).onclick = function() { window.open(success[UrlJsonKey]) }
+        }
+    });
+}
+
+// set download URL for Create-SMP modpack
+setDownloadUrl("https://api.derlung.com/createsmp-version-info", "downloadUrl", "createsmp_download_button");

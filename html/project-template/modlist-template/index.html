@@ -27,7 +27,8 @@
 
         <div id="allowed_mods">
             <h2>Erlaubte Mods</h2>
-            <table>
+            <input type="search" class="inner_search" onfocus="this.select()" oninput="search(this, '.allowed_mods tr:not(:has(th))')"> <!-- exclude table head with  :not(:has(th))  so it doesn't disappear when searching -->
+            <table class="allowed_mods">
                 <thead>
                     <th class="left-header">Wichtigkeit</th>
                     <th>Mod-URL</th>
@@ -44,7 +45,8 @@
 
         <div id="server_mods">
             <h2>Server-Side Mods</h2>
-            <table>
+            <input type="search" class="inner_search" onfocus="this.select()" oninput="search(this, '.server_mods tr:not(:has(th))')"> <!-- exclude table head with  :not(:has(th))  so it doesn't disappear when searching -->
+            <table class="server_mods">
                 <thead>
                     <th class="left-header">Status</th>
                     <th>Mod-URL</th>
@@ -71,6 +73,9 @@
             </section>
         </section>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../script.js?v=2.1.0"></script>
 </body>
 
 </html>
