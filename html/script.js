@@ -73,6 +73,3 @@ function setDownloadUrl(endpoint, UrlJsonKey, anchorId) {
         }
     });
 }
-
-// set download URL for Create-SMP modpack
-setDownloadUrl("https://api.derlung.com/createsmp-version-info", "downloadUrl", "createsmp_download_button");
