@@ -66,7 +66,7 @@ function setDownloadUrl(endpoint, UrlJsonKey, anchorId) {
         cache: false,
         error: (err) => {
             console.error(err.statusText);
-            alert(`Downloadlink konnte nicht abgefragt werden.\n(${err.statusText})`);
+            document.getElementById(anchorId).onclick = function() { alert(`Downloadlink konnte nicht abgefragt werden.\n(${err.statusText})`) }
         },
         success: (success) => {
             document.getElementById(anchorId).onclick = function() { window.open(success[UrlJsonKey]) }
