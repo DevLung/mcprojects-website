@@ -170,6 +170,14 @@ a:active {
     color: #caf0f8;
 }
 
+a.disabled,
+a.disabled.main_url,
+a.disabled.main_url:any-link {
+    pointer-events: none;
+    cursor: default;
+    color: gray;
+}
+
 .players {
     margin: 2em;
 }
