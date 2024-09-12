@@ -57,7 +57,7 @@ function copyUriToClipboard(button, uri) {
 }
 
 
-// sets the onclick attribute of elements with id=anchorId to the text at UrlJsonKey in the response of endpoint
+// sets the onclick attribute of elements with id=anchorId to the text at UrlJsonKey in the response of endpoint and enables the elements
 function setDownloadUrl(endpoint, UrlJsonKey, anchorId) {
     jQuery.ajax({
         url: endpoint,
@@ -66,10 +66,11 @@ function setDownloadUrl(endpoint, UrlJsonKey, anchorId) {
         cache: false,
         error: (err) => {
             console.error(err.statusText);
-            document.getElementById(anchorId).onclick = function() { alert(`Downloadlink konnte nicht abgefragt werden.\n(${err.statusText})`) }
         },
         success: (success) => {
-            document.getElementById(anchorId).onclick = function() { window.open(success[UrlJsonKey]) }
+            let anchor = document.getElementById(anchorId);
+            anchor.onclick = function() { window.open(success[UrlJsonKey]) }
+            anchor.classList.remove("disabled");
         }
     });
 }
