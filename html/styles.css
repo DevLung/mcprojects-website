@@ -191,6 +191,11 @@ a.disabled.main_url:any-link {
     max-width: var(--max-p-width);
 }
 
+.player_heads img {
+    min-width: 32px;
+    min-height: 32px;
+}
+
 .main_url_section {
     margin-inline: auto;
     display: flex;
