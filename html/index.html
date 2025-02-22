@@ -4,7 +4,7 @@
 <head>
    <meta charset="utf-8">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:b">
-   <link rel="stylesheet" href="./styles.css?v=3.5.4">
+   <link rel="stylesheet" href="./styles.css?v=3.6.0">
    <link rel="icon" href="./media/hotlink-ok/favicon.png?v=2.0.0">
    <title>DerLung's Minecraft-Projekte</title>
 </head>
@@ -22,7 +22,9 @@
 
 
       <div class="project ended" id="create-smp">
-         <h2>Create-SMP</h2>
+         <section class="project_headline_wrapper">
+            <h2 class="project_headline minecraft">Create-SMP</h2>
+         </section>
          <p>
             Ein modded SMP mit einem Modpack basierend auf der Create Mod und vielen Create Addons
             sowie einer Menge an Quality-Of-Life-Mods.
@@ -94,7 +96,9 @@
 
 
       <div class="project ended" id="1-21-smp">
-         <h2>1.21-SMP</h2>
+         <section class="project_headline_wrapper">
+            <h2 class="project_headline minecraft">1.21-SMP</h2>
+         </section>
          <p>
             Ein (hauptsächlich) Vanilla SMP, das dazu da ist, die Version 1.21 zu erkunden und erleben und allgemein Spaß zu haben.
          </p>
@@ -152,7 +156,9 @@
 
 
       <div class="project ended" id="1-20-smp">
-         <h2>1.20-SMP</h2>
+         <section class="project_headline_wrapper">
+            <h2 class="project_headline minecraft">1.20-SMP</h2>
+         </section>
          <p>
             Ein Vanilla SMP, das dazu da ist, die Version 1.20 zu erkunden und erleben<br>
             und allgemein Spaß zu haben.
@@ -188,42 +194,8 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
    <script src="./script.js?v=2.1.3"></script>
    <script>
-       setDownloadUrl("https://api.derlung.com/createsmp-version-info", "downloadUrl", "createsmp_download_button");
+      setDownloadUrl("https://api.derlung.com/createsmp-version-info", "downloadUrl", "createsmp_download_button");
    </script>
 </body>
 
 </html>
-
-
-<!-- project template (update second class to show status of project (scheduled/running/ended))
-
-      <div class="project scheduled" id="PROJECT-ID">
-         <h2>PROJECT-NAME</h2>
-         <p>
-            DESCRIPTION
-         </p>
-         <p>
-            INFO
-         </p>
-         <section class="players">
-            <h3>Teilnehmer</h3>
-            <a href="https://www.youtube.com/@DerLung" target="_blank" rel="noreferrer noopener" class="player_head"><img src="https://mineskin.eu/helm/DerLung/16" title="DerLung"></a>
-            <a href="PLAYER.SOCIAL.URL" target="_blank" rel="noreferrer noopener" class="player_head"><img src="https://mineskin.eu/helm/PLAYER-USERNAME/16" title="PLAYER-USERNAME"></a>
-         </section>
-         <section class="main_url_section">
-            <a class="main_url" onclick="show('PROJECT_RULES_POPUP_ID')">Regeln</a>
-            <div class="popup" id="PROJECT_RULES_POPUP_ID">
-               <section class="blocker" onclick="hide(openedOverlay)"></section>
-               <h2>Regeln</h2>
-               <a class="popup_close_button" onclick="hide(openedOverlay)">&times;</a>
-               <section class="scrollable_container popup_text">
-                  <ul>
-                     <li>RULE</li>
-                  </ul>
-               </section>
-            </div>
-            <a class="main_url" href="./PROJECT/MODLIST">Modliste</a>
-         </section>
-      </div>
-
- -->
