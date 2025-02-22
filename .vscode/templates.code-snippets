@@ -1,0 +1,106 @@
+{
+	"add project": {
+		"scope": "html",
+		"prefix": "project",
+		"body": [
+			"<div class=\"project scheduled\" id=\"${3:ID}\">",
+			"    <section class=\"project_headline_wrapper\">",
+			"        <h2 class=\"project_headline ${2:GAME (see styles.css for options)}\">${1:NAME}</h2>",
+			"    </section>",
+			"    <p>",
+			"        <!-- DESCRIPTION -->$0",
+			"    </p>",
+			"    <p>",
+			"        <!-- INFO -->",
+			"    </p>",
+			"    <section class=\"players\">",
+			"        <h3>Teilnehmer</h3>",
+			"        <!-- PLAYERS -->",
+			"    </section>",
+			"    <section class=\"main_url_section\">",
+			"        <a class=\"main_url\" onclick=\"show('${3:ID}-rules-popup')\">Regeln</a>",
+			"        <div class=\"popup\" id=\"${3:ID}-rules-popup\">",
+			"            <section class=\"blocker\" onclick=\"hide(openedOverlay)\"></section>",
+			"            <h2>Regeln</h2>",
+			"            <a class=\"popup_close_button\" onclick=\"hide(openedOverlay)\">&times;</a>",
+			"            <section class=\"scrollable_container popup_text\">",
+			"                <ol>",
+			"                    <!-- RULES -->",
+			"                    <li>...</li>",
+			"                </ol>",
+			"            </section>",
+			"        </div>",
+			"        <!-- URLS -->",
+			"        <a class=\"main_url\" onclick=\"copyUriToClipboard(this, 'https://mcprojects.derlung.com/#${3:ID}')\">Projekt teilen</a>",
+			"    </section>",
+			"</div>",
+		],
+		"description": "add project to main page"
+	},
+
+	"add url": {
+		"scope": "html",
+		"prefix": "url",
+		"body": "<a class=\"main_url\" href=\"${1:URL}\">${2:NAME}</a>$0",
+		"description": "add url to project"
+	},
+
+	"add player": {
+		"scope": "html",
+		"prefix": "player",
+		"body": "<a href=\"${3:SOCIAL_URL}\" target=\"_blank\" rel=\"noreferrer noopener\"><img src=\"${2:PFP_URL}\" title=\"${1:NAME}\"></a>$0",
+		"description": "add player to project"
+	},
+
+	"add player (no socials)": {
+		"scope": "html",
+		"prefix": "player nosocials",
+		"body": "<a style=\"cursor: default;\"><img src=\"${2:PFP_URL}\" title=\"${1:NAME}\"></a>$0",
+		"description": "add player without social media link to project"
+	},
+	
+	"add player (minecraft)": {
+		"scope": "html",
+		"prefix": "minecraft player",
+		"body": "<a href=\"${2:SOCIAL_URL}\" target=\"_blank\" rel=\"noreferrer noopener\"><img src=\"https://mineskin.eu/helm/${1:MC_NAME}/16\" title=\"${1:MC_NAME}\"></a>$0",
+		"description": "add minecraft player to project"
+	},
+
+	"add player (minecraft, no socials)": {
+		"scope": "html",
+		"prefix": "minecraft player nosocials",
+		"body": "<a style=\"cursor: default;\"><img src=\"https://mineskin.eu/helm/${1:MC_NAME}/16\" title=\"${1:MC_NAME}\"></a>$0",
+		"description": "add minecraft player without social media link to project"
+	},
+
+	"add mod": {
+		"scope": "html",
+		"prefix": "mod",
+		"body": "<li><a href=\"${1:URL}\" target=\"_blank\" rel=\"noreferrer noopener\">${2:NAME}</a></li>$0",
+		"description": "add a mod to modlist"
+	},
+
+	"add allowed mod": {
+		"scope": "html",
+		"prefix": "allowed mod",
+		"body": [
+			"<tr>",
+			"    <td class=\"${1:optional OR handy OR recommended}\">${2:optional OR praktisch OR empfohlen}</td>",
+			"    <td><a href=\"${3:URL}\" target=\"_blank\" rel=\"noreferrer noopener\">${4:NAME}</a></td>",
+			"</tr>$0"
+		],
+		"description": "add an allowed mod to mod table"
+	},
+
+	"add server mod": {
+		"scope": "html",
+		"prefix": "server mod",
+		"body": [
+			"<tr>",
+            "    <td class=\"implementation\">✔️$1❌</td>",
+            "    <td><a href=\"${2:URL}\" target=\"_blank\" rel=\"noreferrer noopener\">${3:NAME}</a></td>",
+            "</tr>$0"
+		],
+		"description": "add a server side mod to mod table"
+	}
+}
