@@ -31,7 +31,7 @@
 			"            </section>",
 			"        </div>",
 			"        <!-- URLS -->",
-			"        <a class=\"main_url\" onclick=\"copyUriToClipboard(this, 'https://mcprojects.derlung.com/#${3:ID}')\">Projekt teilen</a>",
+			"        <a class=\"main_url\" onclick=\"copyUriToClipboard(this, 'https://projects.derlung.com/#${3:ID}')\">Projekt teilen</a>",
 			"    </section>",
 			"</div>",
 		],
