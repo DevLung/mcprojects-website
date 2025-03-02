@@ -228,8 +228,8 @@ a.disabled.main_url:any-link {
 }
 
 .player_heads img {
-    min-width: 32px;
-    min-height: 32px;
+    width: 32px;
+    height: 32px;
     image-rendering: pixelated;
 }
 

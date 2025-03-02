@@ -4,7 +4,7 @@
 <head>
    <meta charset="utf-8">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:b">
-   <link rel="stylesheet" href="./styles.css?v=3.6.0">
+   <link rel="stylesheet" href="./styles.css?v=3.6.1">
    <link rel="icon" href="./media/hotlink-ok/favicon.png?v=3.0.0">
    <title>DerLung's Gaming-Projekte</title>
 </head>
@@ -19,6 +19,58 @@
       <input type="search" class="div_search" onfocus="this.select()" oninput="search(this, '.project .project_headline_wrapper', '.project')">
 
       <!-- insert new project under here -->
+
+
+      <div class="project scheduled" id="rust-week">
+         <section class="project_headline_wrapper">
+            <h2 class="project_headline rust">Rust Week</h2>
+         </section>
+         <p>
+            Ein einwöchiger Vanilla Rust-Wipe auf einem Private Server.
+         </p>
+         <p>
+            Das Projekt wird voraussichtlich im Zeitraum um Ostern 2025 stattfinden.
+         </p>
+         <section class="players">
+            <h3>Teilnehmer (unvollständig)</h3>
+            <section class="player_heads">
+               <a href="https://www.youtube.com/@DerLung" target="_blank" rel="noreferrer noopener"><img src="https://avatars.fastly.steamstatic.com/c7bfebc36d0c921e89a5af109a40934ede8f9b3f_full.jpg" title="DerLung"></a>
+               <a href="https://www.youtube.com/@jannikderdschinn" target="_blank" rel="noreferrer noopener"><img src="https://avatars.fastly.steamstatic.com/d3c5358346303b999108aa0281aca9d826155bee_full.jpg" title="Jannikderdschinn"></a>
+            </section>
+         </section>
+         <section class="main_url_section">
+            <a class="main_url" onclick="show('rust-week-rules-popup')">Regeln</a>
+            <div class="popup" id="rust-week-rules-popup">
+               <section class="blocker" onclick="hide(openedOverlay)"></section>
+               <h2>Regeln</h2>
+               <a class="popup_close_button" onclick="hide(openedOverlay)">&times;</a>
+               <section class="scrollable_container popup_text">
+                  <ol>
+                     <li>Sei bitte immer respektvoll gegenüber anderen Spielern.</li>
+                     <li>Verwerfliche oder anderweitig unangebrachte (Minderheiten verachtende, gewaltverherrlichende, sexuelle, ...) Inhalte sind verboten.</li>
+                     <li>Das Nutzen von Modifikationen, die einen Spielvorteil gegenüber anderen bieten, ist verboten.</li>
+                     <li>Offline Raids, also das raiden einer Base, deren Besitzer nicht online sind, ist verboten.
+                        (Rage Quitting oder Combat Logging schützt aber natürlich nicht vor Raids)</li>
+                     <li>Praktiken, die Anderen unnötig den Spielspaß nehmen wie wiederholtes Door-, Spawn- oder Roofcamping sind nicht erwünscht.</li>
+                     <li>Griefen von Bases, Fahrzeugen, etc., das keinem im Spielkontext sinnvollen Zweck dient, ist verboten.</li>
+                     <li>Absichtliches Erzeugen von Lags oder anderen Methoden, die das Spielerlebnis anderer Spieler beeinträchtigen, ist verboten.</li>
+                     <li>Chat-Spamming ist nicht erwünscht.</li>
+                     <li>Du akzeptierst, dass dein Steam-Username, -Skin und deine Chatnachrichten sowie deine Stimme, wenn du im Voice Chat redest,
+                        in Videos und Streams zu sehen/hören sein dürfen.</li>
+                     <li>Die Umgehung von Bestrafungen wie Bans, Mutes, etc. ist verboten.</li>
+                     <li>Den Anweisungen der Projektleitung ist Folge zu leisten.</li>
+                     <li>Du akzeptierst, dass du die Regeln kennst und dich an diese halten musst, wenn du am Projekt teilnimmst.
+                        Unwissenheit schützt also nicht vor Bestrafung. (Bei Unklarheiten zu den Regeln und allen das Projekt betreffenden Dingen
+                        bitte den Projektleiter (Discord: derlung) kontaktieren.)</li>
+                     <li class="warning">Ein Verstoß gegen diese Regeln oder anderweitiges unangemessenes Verhalten kann nach Ermessen des Projektleiters
+                        bestraft werden. Im Ernstfall bedeutet dies den Ausschluss aus dem Projekt.</li>
+                  </ol>
+               </section>
+            </div>
+            <!-- URLS -->
+            <a class="main_url" onclick="copyUriToClipboard(this, 'https://projects.derlung.com/#rust-week')">Projekt teilen</a>
+         </section>
+      </div>
 
 
       <div class="project ended" id="create-smp">
